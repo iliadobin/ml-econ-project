@@ -1,0 +1,56 @@
+{
+  "top_features": [
+    "Adult Mortality",
+    " HIV/AIDS",
+    "Income composition of resources",
+    "under-five deaths ",
+    " thinness 5-9 years",
+    "Schooling",
+    " BMI ",
+    "percentage expenditure",
+    "Diphtheria ",
+    "Year"
+  ],
+  "importance": [
+    {
+      "feature": "Adult Mortality",
+      "importance": 2.45603539908727
+    },
+    {
+      "feature": " HIV/AIDS",
+      "importance": 2.2534221701240544
+    },
+    {
+      "feature": "Income composition of resources",
+      "importance": 1.6478202822271981
+    },
+    {
+      "feature": "under-five deaths ",
+      "importance": 0.4515176534557343
+    },
+    {
+      "feature": " thinness 5-9 years",
+      "importance": 0.39700618726730313
+    },
+    {
+      "feature": "Schooling",
+      "importance": 0.3752489640776314
+    },
+    {
+      "feature": " BMI ",
+      "importance": 0.3329421162541703
+    },
+    {
+      "feature": "percentage expenditure",
+      "importance": 0.24750157760938032
+    },
+    {
+      "feature": "Diphtheria ",
+      "importance": 0.2392126274172465
+    },
+    {
+      "feature": "Year",
+      "importance": 0.22953724830945327
+    }
+  ]
+}
