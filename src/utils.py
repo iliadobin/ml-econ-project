@@ -9,7 +9,10 @@ import joblib
 from pathlib import Path
 from typing import Dict, List, Tuple, Any
 import json
+import sys
 
+# Add parent directory to path
+sys.path.append(str(Path(__file__).parent.parent))
 import config
 
 

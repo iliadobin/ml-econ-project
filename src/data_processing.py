@@ -9,9 +9,12 @@ from pathlib import Path
 from typing import Tuple
 import joblib
 import json
+import sys
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
+# Add parent directory to path
+sys.path.append(str(Path(__file__).parent.parent))
 import config
 
 
@@ -104,7 +107,7 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
         if col != config.TARGET_COLUMN and df_clean[col].isnull().any():
             median_val = df_clean[col].median()
             n_missing = df_clean[col].isnull().sum()
-            df_clean[col].fillna(median_val, inplace=True)
+            df_clean[col] = df_clean[col].fillna(median_val)
             print(f"✅ Filled {n_missing} missing values in '{col}' with median: {median_val:.2f}")
     
     # Handle missing values in categorical columns
@@ -112,7 +115,7 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
         if col in df_clean.columns and df_clean[col].isnull().any():
             mode_val = df_clean[col].mode()[0]
             n_missing = df_clean[col].isnull().sum()
-            df_clean[col].fillna(mode_val, inplace=True)
+            df_clean[col] = df_clean[col].fillna(mode_val)
             print(f"✅ Filled {n_missing} missing values in '{col}' with mode: {mode_val}")
     
     print(f"\n✅ Cleaned data shape: {df_clean.shape}")
