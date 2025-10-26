@@ -8,49 +8,49 @@
     "Schooling",
     " BMI ",
     "percentage expenditure",
-    "Diphtheria ",
-    "Year"
+    "Alcohol",
+    "Diphtheria "
   ],
   "importance": [
     {
       "feature": "Adult Mortality",
-      "importance": 2.45603539908727
+      "importance": 2.6067700885677327
     },
     {
       "feature": " HIV/AIDS",
-      "importance": 2.2534221701240544
+      "importance": 2.1182425320370992
     },
     {
       "feature": "Income composition of resources",
-      "importance": 1.6478202822271981
+      "importance": 1.6798702894528708
     },
     {
       "feature": "under-five deaths ",
-      "importance": 0.4515176534557343
+      "importance": 0.4364259435780841
     },
     {
       "feature": " thinness 5-9 years",
-      "importance": 0.39700618726730313
+      "importance": 0.4080670319239297
     },
     {
       "feature": "Schooling",
-      "importance": 0.3752489640776314
+      "importance": 0.3511023811244967
     },
     {
       "feature": " BMI ",
-      "importance": 0.3329421162541703
+      "importance": 0.3404357017771402
     },
     {
       "feature": "percentage expenditure",
-      "importance": 0.24750157760938032
+      "importance": 0.24716425959904992
+    },
+    {
+      "feature": "Alcohol",
+      "importance": 0.22871253909428904
     },
     {
       "feature": "Diphtheria ",
-      "importance": 0.2392126274172465
-    },
-    {
-      "feature": "Year",
-      "importance": 0.22953724830945327
+      "importance": 0.22157014227867144
     }
   ]
 }

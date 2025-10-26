@@ -1,0 +1,237 @@
+# ===================================
+# Life Expectancy ML Project
+# .gitignore
+# ===================================
+
+# ===================================
+# CRITICAL: API Keys and Secrets
+# ===================================
+.env
+.env.*
+!.env.example
+*.key
+secrets/
+credentials/
+
+# ===================================
+# Python
+# ===================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ===================================
+# ML/Data Science Specific
+# ===================================
+# Model files (large binary files)
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.onnx
+*.pt
+*.pth
+*.model
+*.joblib
+
+# BUT keep the trained models (they're important!)
+# Comment out if models are too large (>100MB)
+!model/trained_models/*.pkl
+!model/preprocessing/*.pkl
+
+# Data files (can be large)
+*.csv
+*.tsv
+*.dat
+*.data
+*.parquet
+
+# BUT keep raw data example and processed splits if small
+!data/raw/*.csv
+!data/processed/*.csv
+
+# Temporary data
+*.tmp
+*.temp
+
+# ===================================
+# Streamlit
+# ===================================
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ===================================
+# IDEs and Editors
+# ===================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Cursor
+.cursor/
+
+# ===================================
+# OS Files
+# ===================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===================================
+# Logs and Databases
+# ===================================
+*.log
+*.sql
+*.sqlite
+*.db
+
+# ===================================
+# Backup files
+# ===================================
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# ===================================
+# Cache and temporary files
+# ===================================
+*.cache
+.cache/
+tmp/
+temp/
+
+# ===================================
+# Project Specific
+# ===================================
+# SHAP visualizations (can be regenerated)
+# Uncomment if you don't want to commit them:
+# model/visualizations/*.png
+
+# Notebook output (optional - keep if you want to show results)
+# notebooks/*.html
+
+# Test outputs
+test_output/
+*.test
+
+# Large Kaggle datasets (will be downloaded automatically)
+# Uncomment if dataset is very large:
+# data/raw/Life\ Expectancy\ Data.csv
+
+# ===================================
+# Documentation builds
+# ===================================
+docs/_build/
+site/
+
+# ===================================
+# Optional: Heavyweight files
+# ===================================
+# Uncomment these if your repo becomes too large:
+# *.png
+# *.jpg
+# *.jpeg
+# !docs/images/*.png
+# model/visualizations/
+
+# ===================================
+# Package manager files
+# ===================================
+poetry.lock
+Pipfile.lock
+# But keep requirements.txt!
+

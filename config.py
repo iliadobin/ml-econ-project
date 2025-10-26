@@ -50,7 +50,9 @@ NUMERIC_FEATURES = [
 
 # LLM Configuration
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai")
-LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4-turbo-preview")
+# Updated model names (gpt-4-turbo-preview is deprecated)
+# Options: gpt-4o, gpt-4-turbo, gpt-4, gpt-3.5-turbo
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o")  # Most capable model
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
