@@ -1,0 +1,23 @@
+{
+  "model_name": "XGBoost",
+  "training_time": 1.2465291023254395,
+  "best_params": {
+    "subsample": 0.9,
+    "n_estimators": 300,
+    "min_child_weight": 5,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "gamma": 0,
+    "colsample_bytree": 0.9
+  },
+  "cv_mae": 1.3099367290878174,
+  "train_mae": 0.2062136109918356,
+  "train_rmse": 0.31246204379015424,
+  "train_r2": 0.9989085013911241,
+  "val_mae": 1.1298563003540039,
+  "val_rmse": 1.8746718498746764,
+  "val_r2": 0.9659052206356269,
+  "test_mae": 1.0657935333251956,
+  "test_rmse": 1.722137889882773,
+  "test_r2": 0.9640541581842553
+}
