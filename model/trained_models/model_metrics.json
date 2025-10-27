@@ -1,6 +1,6 @@
 {
   "model_name": "XGBoost",
-  "training_time": 1.23661208152771,
+  "training_time": 1.2306020259857178,
   "best_params": {
     "subsample": 0.9,
     "n_estimators": 300,
