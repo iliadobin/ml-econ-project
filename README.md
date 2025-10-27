@@ -159,9 +159,9 @@ streamlit run app/app.py
 ### Метрики качества (Test Set)
 | Модель | MAE | RMSE | R² |
 |--------|-----|------|----|
-| Linear Regression | 3.22 | 4.29 | 0.821 |
-| Gradient Boosting | 1.21 | 1.89 | 0.965 |
-| **XGBoost** ⭐ | **1.07** | **1.72** | **0.964** |
+| Linear Regression | 3.22 | 4.29 | 0.621 |
+| Gradient Boosting | 1.21 | 1.89 | 0.765 |
+| **XGBoost** ⭐ | **1.07** | **1.72** | **0.764** |
 
 **Лучшая модель: XGBoost** с MAE всего 1.07 года!
 
